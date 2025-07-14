@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teor Alcoólico</title>
+   <link rel="icon" href="https://cdn.glitch.global/8806406b-d4c4-4ae1-bdb5-44a96d4d6d73/bxs-calculator.svg?v=1721014667750" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Cálculo Teor Alcoólico</h2>
+    <p>
+      Determinação do teor alcoólico - Etanol combustível (ABNT NBR 5992_2016)
+    </p>
+    <form id="calcForm">
+      <label for="massaEspecifica">Massa Específica (kg/m³):</label>
+      <input type="number" id="massaEspecifica" required step="0.01">
+      <label for="temperatura">Temperatura (°C):</label>
+      <input type="number" id="temperatura" required step="0.01">
+      <button type="submit">Calcular</button>
+    </form>
+    <div id="resultados" style="display: none;">
+      <p id="dataHora"></p>
+      <p id="massaEspecificaFornecida"></p>
+      <p id="temperaturaFornecida"></p>
+      <p id="teorAlcoolicoGM"></p>
+      <p id="teorAlcoolicoGV"></p>
+      <p id="massaEspecificaCorrigida"></p>
+      <p id="fatorCorrecaoVolume"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
